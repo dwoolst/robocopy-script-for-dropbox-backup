@@ -1,3 +1,4 @@
+
 # robocopy-script-for-dropbox-backup
 I use this for backing up my dropbox. Why you ask? Using robocopy scripts with task manager has completely automated my local backups, 
 and I can now leave my drive plugged in all the time because when its Unmounted its not readable so its safe from any virus the PC 
@@ -10,11 +11,17 @@ Ive devised a script(macro) to automate backups of all the data on my pc(which i
 
 WHAT IT DOES:
 My backup scheme does whats called a "Mirror" to make the specified folders on your ext drive be an exact copy of your source folders, so that if you delete a file on your source it wont take up unnecessary space on your backup drive. A great side benefit is that this "Mirror" is really a synchronization so that your subsequent backups happen extremely fast! 
-I have created these 3 scripts. The first two are kust test scripts to make sure mount and unmount are working ok the pc.
+
+I have created these 3 scripts:
+MOUNT.BAT
+UNMOUNT.BAT
+ROBOBACKUP.BAT
+
+The first two are just test scripts to make sure mount and unmount are working ok the pc.
 mount.bat - mounts your ext drive (just used for testing purposes, not needed to do backups) 
 unmount.bat - disconnects it. (just used for testing purposes, not needed to do backups) 
 
-This scipt is the one that will be used and run by the windows Task Scheduler:
+This last scipt is the one that will be used and run by the windows Task Scheduler:
 robobackup.bat - The backer-upper! It backs up all your needed files to your ext drive. 
 
 LETS GET STARTED:
