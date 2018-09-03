@@ -7,7 +7,7 @@ goto PROGRAM_START
 Author: SuperDave Mixalot
 
 THE WHY OF IT ALL:
-Ever since my old server got hacked with a virus and I wouldnt pay bitcoin to retrieve my data, I lost it all. A sad day indeed, but I’ve returned and solved the issue. So I offer you my robocopy batchfile. It first connects to my backup drive, backs up all needed data, then disconnects from the drive to keep it protected from any issues which may befall my online pc.
+Ever since my old server got hacked with a virus and I wouldnt pay bitcoin to retrieve my data, I lost it all. A sad day indeed, but Iâ€™ve returned and solved the issue. So I offer you my robocopy batchfile. It first connects to my backup drive, backs up all needed data, then disconnects from the drive to keep it protected from any issues which may befall my online pc.
 
 
 WHAT IT DOES:
@@ -23,7 +23,7 @@ robobackup.bat - The backer-upper. It backs up all needed files to your attached
 
 
 STEP 1:
-First is to determine what your backup drive's volume and drive letter are. Goto a command prompt and type: Mountvol > test.txt and it will fill the text file with all of your attached drive IDs. Copy and Paste the long “Volume Name” of the drive letter you are wanting to mount/unmount to. You will use it in the scripts and it will look something like this: \\?\Volume{b15f4b35-eba0-4eb2-a159-f1d0e4a7cda6}\
+First is to determine what your backup drive's volume and drive letter are. Goto a command prompt and type: Mountvol > test.txt and it will fill the text file with all of your attached drive IDs. Copy and Paste the long â€œVolume Nameâ€ of the drive letter you are wanting to mount/unmount to. You will use it in the scripts and it will look something like this: \\?\Volume{b15f4b35-eba0-4eb2-a159-f1d0e4a7cda6}\
 
 STEP 2:
 Modify both the mount.bat and unmount.bat files and test that they function properly. Remember that you always have to right-click and run them "As Administrator" so they work ok. The UAC(user access control) pops up but just click Yes. 
@@ -145,7 +145,7 @@ ECHO Backups Successful! >> %backup_folder%\%logfile_name%
 goto cleanup
 
 
-REM ----all is NOT OK with the backups!
+REM ----all is NOT OK with the backups! 
 
 :bad_exit
 ECHO. >> %backup_folder%\%logfile_name%
